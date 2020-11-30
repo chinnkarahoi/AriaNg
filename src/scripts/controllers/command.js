@@ -56,7 +56,7 @@
             rpcInterface = rpcInterface || ariaNgDefaultOptions.rpcInterface;
             secret = secret || ariaNgDefaultOptions.secret;
 
-            ariaNgLogService.info('[CommandController] set rpc: ' + rpcProtocol + '://' + rpcHost + ':' + rpcPort + '/' + rpcInterface + ', secret: ' + secret);
+            ariaNgLogService.info('[CommandController] set rpc: ' + rpcProtocol + '://' + rpcHost + '/' + rpcInterface + ', secret: ' + secret);
 
             if (!rpcProtocol || (rpcProtocol !== 'http' && rpcProtocol !== 'https' && rpcProtocol !== 'ws' && rpcProtocol !== 'wss')) {
                 ariaNgLocalizationService.showError('Protocol is invalid!');
